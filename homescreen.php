@@ -12,14 +12,8 @@
 	
 	else{
 		$p_id = htmlspecialchars($_SESSION["p_id"]);
-		echo "Welcome $p_id. You are currently logged in.<br />;
-	<body>
-		<?php
-			$query = "SELECT * FROM `ATABLE`;";
-			$result = mysqli_query($db, $query);
-			while($row = mysqli_fetch_assoc($result)){
-				//display
-			}
-		?>
-	</body>
+		echo "Welcome $p_id. You are currently logged in.<br />";
+	
+	}
+?>
 </html>
