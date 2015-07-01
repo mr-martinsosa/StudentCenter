@@ -13,7 +13,6 @@
 	else{
 		$p_id = htmlspecialchars($_SESSION["p_id"]);
 		echo "Welcome $p_id. You are currently logged in.<br />";
-	
 	}
 ?>
 </html>
