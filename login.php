@@ -16,7 +16,18 @@ if(isset($_SESSION["p_id"])) {
 
 //provide login otherwise
 else{
-	echo "";
+	echo "Enter your login information below: <br /><br />\n";
+    echo '<form action="logincheck.php" method="POST">';
+	echo "\n";
+    echo 'Username: <input type="text" name="p_id" /><br />';
+	echo "\n";
+    echo 'Password: <input type="password" name="password" /><br />';
+	echo "\n";
+    echo '<input type="submit" value="Login" />';
+	echo "\n";
+    echo '</form>';
+	echo "\n";
+	echo '<br /><a href="homescreen.php">Homescreen</a>';
 }
 
 ?>
