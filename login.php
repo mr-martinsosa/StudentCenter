@@ -8,7 +8,7 @@
 include "include.php";
 
 //check for login, otherwise go back to homepage
-if(isset($_SESSION["p_id"])) {
+if(isset($_SESSION["student_id"])) {
 	echo "You are logged in, you will be redirected soon. \n";
 	echo "or click <a href=\"homescreen.php\">here</a> to return. \n";
 	header("refresh: 3; homescreen.php");

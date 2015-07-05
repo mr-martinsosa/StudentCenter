@@ -1,5 +1,5 @@
 <?php
-	$mysqli = new mysqli('localhost', 'USERNAME', '', 'studentcenter');	
+	$mysqli = new mysqli('localhost', 'USERNAME', '', 'university');	
 
 if (mysqli_conect_errno()) {
 	printf("Connect failed: %s\n", mysqli_conect_error());
