@@ -1,8 +1,8 @@
 <?php
-	$mysqli = new mysqli('localhost', 'USERNAME', '', 'university');	
+	$mysqli = new mysqli("localhost", "root", "", "university");	
 
 if (mysqli_conect_errno()) {
-	printf("Connect failed: %s\n", mysqli_conect_error());
+	printf("Connect failed: %s\n", mysqli_connect_error());
 	exit();
 }
 
